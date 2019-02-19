@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    h1 {
+        text-align: center;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+</style>
+<h1>Build a Blog</h1>
+<ul class="unstyled">
+    {% for blog in blogs %}
+    <hr>
+        <li>
+            <a href='/blog?id={{ blog.id }}'><h2>{{ blog.title }}</h2></a>
+        </li>
+        <li>{{ blog.body }}</li></br>
+    
+    {% endfor %}
+</ul>
+
+{% endblock %}
