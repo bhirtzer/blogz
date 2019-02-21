@@ -9,16 +9,14 @@
     }
 
 </style>
-<h1>Build a Blog</h1>
+<h1>{{ email.email }}</h1>
 <ul class="unstyled">
-    {% for blog in blogs %}
+    {% for blog in blogposts %}
     <hr>
         <li>
             <a href='/blog?id={{ blog.id }}'><h2>{{ blog.title }}</h2></a>
         </li>
-        <li><p>{{ blog.body }}<p></li>
-        <small>Written By: <a href='/user?user={{ blog.owner_id }}'>{{ blog.owner.email }}</a></small>
-    
+        <li><p>{{ blog.body }}<p></li></br>    
     {% endfor %}
 </ul>
 

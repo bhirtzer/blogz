@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    h1 {
+        text-align: center;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+</style>
+<h1>Blogz Users!</h1>
+<ul class="unstyled">
+    {% for user in users %}
+    <hr>
+        <li>
+            <a href='/user?id={{ user.id }}'><h2>{{ user.email }}</h2></a>
+        </li>
+        
+    
+    {% endfor %}
+</ul>
+
+{% endblock %}
