@@ -16,11 +16,11 @@
     <div style='float: right'>
         {% if 'email' in session %}
           {{ session['email'] }} &nbsp | &nbsp <a href='/'>Main Blog Page</a> &nbsp | &nbsp <a href='/newpost'>Add a Blog Entry</a>
-            &nbsp | &nbsp <a href='/logout'>Log Out</a>
+            &nbsp | &nbsp <a href='/users'>Users</a> &nbsp | &nbsp <a href='/logout'>Log Out</a>
           
         {% else %}
-        <a href='/'>Main Blog Page</a> &nbsp | &nbsp <a href='/newpost'>Add a Blog Entry</a> &nbsp | &nbsp <a href='/login'>Log In</a>
-            &nbsp | &nbsp <a href='/signup'>Sign Up</a> 
+        <a href='/'>Main Blog Page</a> &nbsp | &nbsp <a href='/newpost'>Add a Blog Entry</a> &nbsp | &nbsp <a href='/users'>Users</a> 
+            &nbsp | &nbsp <a href='/login'>Log In</a> &nbsp | &nbsp <a href='/signup'>Sign Up</a> 
         {% endif %}
     </div>
 
